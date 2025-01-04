@@ -17,13 +17,13 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'out')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'pfnetine-win32-x64'),
-    exe: 'pfnetine.exe',
-    iconUrl: 'https://raw.githubusercontent.com/pfnet-software/pfnetine/master/assets/app-icon/win/app.ico',
+    appDirectory: path.join(outPath, 'pfnetline-win32-x64'),
+    exe: 'pfnetline.exe',
+    iconUrl: 'https://raw.githubusercontent.com/pfnet-software/pfnetline/master/assets/app-icon/win/app.ico',
     loadingGif: path.join(rootPath, 'assets', 'img', 'loading.gif'),
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
-    setupExe: 'pfnetineSetup.exe',
+    setupExe: 'pfnetlineSetup.exe',
     setupIcon: path.join(rootPath, 'assets', 'app-icon', 'win', 'app.ico'),
     skipUpdateIcon: true
   })
